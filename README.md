@@ -15,7 +15,7 @@ Create and configure basic website on AWS.
 
 ## Usage
 
-Edit `variables.tf` of create a terraform var file.
+Create a terraform var file `my-website.tfvars`.
 
 ```
 terraform init
