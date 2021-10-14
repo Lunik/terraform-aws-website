@@ -1,6 +1,7 @@
 
 module "aws_s3" {
-  source = "https://github.com/Lunik/iac_terraform_aws_s3.git?ref=0.1.0"
+  source  = "Lunik/s3/aws"
+  version = "0.1.0"
 
   providers = {
     aws = aws.france
@@ -37,7 +38,8 @@ module "aws_s3" {
 }
 
 module "aws_cloudfront" {
-  source = "https://github.com/Lunik/iac_terraform_aws_cloudfront.git?ref=0.1.0"
+  source  = "Lunik/cloudfront/aws"
+  version = "0.2.0"
 
   providers = {
     aws = aws.france
@@ -57,7 +59,8 @@ module "aws_cloudfront" {
 }
 
 module "aws_route53" {
-  source = "https://github.com/Lunik/iac_terraform_aws_route53.git?ref=0.1.0"
+  source  = "Lunik/route53/aws"
+  version = "0.1.0"
 
   providers = {
     aws = aws.france
